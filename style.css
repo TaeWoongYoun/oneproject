@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* 초기설정 */
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  box-sizing: border-box;
+
+}
+
+main{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    border: #000000 solid 3px;
+}
+
+a{
+    text-decoration-line: none;
+    display: block;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.HeaderLi{
+    width: 300px;
+    height: 100%;
+    background-color: aliceblue;
+    margin-right: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+    line-height: 90px;
+}
+
+/* 메인메뉴*/
+.HeaderNavi{
+    margin-left: 150px; /*마진으로 로고랑 메뉴 사이에 여백을 줌*/
+    width: 700px;
+    height: 100px;
+    display: flex; /*메인메뉴들 가지런하게 정렬해줌*/
+    align-items: center;/*상하정렬*/
+}
+
+.HeaderNavi > li{
+    width: 100%;
+    height: 50px;
+    padding-top: 12px; /*패딩으로 위에 여백줌*/
+    position: relative; /*(상대 위치)	요소 자기 자신을 기준으로 배치하고 top bottom left right로 요소의 위치를 옮김*/
+    cursor: pointer; /*커서 올리면 손모양으로 커서가 바뀜 (Wait을 사용하면 상대방 스트레스 받게 가능)*/
+}
+
+.HeaderNavi >li:hover{ /*마우스를 올리면 실행되는 hover 이벤트*/
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.HeaderNavi > li > a{
+    text-align: center;/*글자 가운데 정렬*/
+    color: #000000;/*글자 색*/
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.SubMenu{
+    display: none;/*시작에 보이지 않게*/
+    width: 100%;
+    position: absolute; /*메인메뉴의 기준으로 서브메뉴를 배치*/
+    top: 75px; /*메인메뉴랑 서브메뉴 사이의 여백*/
+    z-index: 1; /*요소의 쌓이는 순서를 결정 */
+    background: #222222;
+}
+
+.SubMenu > li{
+    width: 100%;
+    height: 45px; 
+    font-size: 14px; /*글씨 크기*/
+    font-weight: 500; /*글씨 굵기*/
+    padding-top: 14px;/*여백줌*/
+    text-align: center; 
+}
+
+.SubMenu > li:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.SubMenu a {
+    color: azure;
+}
+
+
+.imgSlide{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-color: aqua;
+}
+
+/* 컨텐츠 영역 */
+.contents{
+    width: 100%;
+    height:200px;
+    padding:0;
+    margin:10px 0;
+    display:flex;
+      justify-content: space-between;
+    overflow: hidden;
+    position: relative; /* 탭메뉴의 콘텐츠 영역 absolute 때문에 넣어줌 */
+}
+  /* 각각 컨텐츠 박스의 영역 */
+.contents div{ width:33.3%;}
+.contents > div:nth-of-type(2){margin:0 10px;}
+  
+  /*탭메뉴 : 공지사항 갤러리 */
+.TabMenu{ display:flex;}
+  
+  /*공지사항 갤러리 제목*/
+.TabMenu > li > a{
+    padding:0 10px;
+    min-width: 85px;
+    line-height:30px;
+    font-size:14px;
+    text-align:center;
+    background:#eeeeee;
+    border:2px solid #000000;
+}
+  
+.TabMenu > li > a:hover{background-color:#eeeeee;}
+  
+  /* 공지사항과 갤러리 탭 맞닿는 부분에 보더를 없애줌 */
+.TabMenu > li:first-child a{border-right:none;}
+  /* 활성화된 탭의 스타일 */
+.TabMenu > li.active > a{ font-weight: bold; background-color:#ffffff;}
+  /*탭 콘텐츠 영역 스타일*/
+.TabBG{
+    position:absolute;
+    overflow:hidden;
+    height:168px; /* chrome inspect(검사) 보고 수치 계산 */
+    background:#ffffff;
+}
+   /*active 클래스가 추가된 탭 콘텐츠 영역 스타일*/
+.TabMenu > li.active div{
+      border:2px solid #000000;
+      z-index:1;
+}
+  
+   /* 공지사항 */
+.Notice ul{padding:20px 0;}
+.Notice ul li{padding:8px 20px;
+    margin:0 10px;
+    font-size:14px;
+}
+.Notice li:nth-child(even){ background:rgba(0, 102, 173, 0.1); }
+.Notice li:hover{color:#222328;background:rgba(0, 102, 173, 0.4);}
+.Notice li span {float:right;} /* 날짜 오른쪽 정렬 */
+
+.cdiv1{
+    width: 400px;
+    height: 220px;
+    display: flex;
+    background-color: aquamarine;
+    border-right: #000000 3px solid;
+    border-left: #000000 2px solid;
+}
+
+.cdiv2{
+    width: 400px;
+    height: 220px;
+    display: flex;
+    background-color: aquamarine;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+    display: flex;
+}
+
+.fli1{
+    width: 700px;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    font-size: larger;
+}
+
+.fli1{
+    width: 500px;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+}
