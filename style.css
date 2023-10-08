@@ -13,7 +13,7 @@ main{
     width: 1200px;
     margin: 0 auto;
     position: relative;
-    border: #000000 solid 3px;
+    
 }
 
 a{
@@ -39,6 +39,7 @@ header{
     color: red;
     line-height: 90px;
 }
+
 
 /* 메인메뉴*/
 .HeaderNavi{
@@ -99,13 +100,18 @@ header{
     width: 100%;
     height: 300px;
     display: flex;
-    background-color: aqua;
+    background-color: beige;
+}
+
+.imgSlide > img{
+    width: 1200px;
+    height: 100%;
 }
 
 /* 컨텐츠 영역 */
 .contents{
     width: 100%;
-    height:200px;
+    height: 200px;
     padding:0;
     margin:10px 0;
     display:flex;
@@ -114,11 +120,17 @@ header{
     position: relative; /* 탭메뉴의 콘텐츠 영역 absolute 때문에 넣어줌 */
 }
   /* 각각 컨텐츠 박스의 영역 */
-.contents div{ width:33.3%;}
-.contents > div:nth-of-type(2){margin:0 10px;}
+.contents div{ 
+    width: 400px;
+    height: 100%;
+}
+
   
   /*탭메뉴 : 공지사항 갤러리 */
-.TabMenu{ display:flex;}
+.TabMenu{
+    display:flex;
+    background-color: #ececff;
+}
   
   /*공지사항 갤러리 제목*/
 .TabMenu > li > a{
@@ -127,16 +139,23 @@ header{
     line-height:30px;
     font-size:14px;
     text-align:center;
-    background:#eeeeee;
-    border:2px solid #000000;
+    border-top: #000000 2px solid;
+    border-bottom: #000000 2px solid;
 }
   
-.TabMenu > li > a:hover{background-color:#eeeeee;}
+.TabMenu > li > a:hover{
+    background-color:#eeeeee;
+}
   
   /* 공지사항과 갤러리 탭 맞닿는 부분에 보더를 없애줌 */
-.TabMenu > li:first-child a{border-right:none;}
+.TabMenu > li:first-child a{
+    border-right:none;
+}
   /* 활성화된 탭의 스타일 */
-.TabMenu > li.active > a{ font-weight: bold; background-color:#ffffff;}
+.TabMenu > li.active > a{
+    font-weight: bold; 
+    background-color:#ffffff;}
+
   /*탭 콘텐츠 영역 스타일*/
 .TabBG{
     position:absolute;
@@ -146,35 +165,55 @@ header{
 }
    /*active 클래스가 추가된 탭 콘텐츠 영역 스타일*/
 .TabMenu > li.active div{
-      border:2px solid #000000;
-      z-index:1;
+    z-index:1;
 }
   
    /* 공지사항 */
-.Notice ul{padding:20px 0;}
-.Notice ul li{padding:8px 20px;
+.Notice ul{
+    padding:20px 0;
+}
+.Notice ul li{
+    padding:8px 20px;
     margin:0 10px;
     font-size:14px;
 }
-.Notice li:nth-child(even){ background:rgba(0, 102, 173, 0.1); }
-.Notice li:hover{color:#222328;background:rgba(0, 102, 173, 0.4);}
-.Notice li span {float:right;} /* 날짜 오른쪽 정렬 */
+.Notice li:nth-child(even){ 
+    background:rgba(0, 102, 173, 0.1); 
+}
+.Notice li:hover{
+    color:#222328;
+    background:rgba(0, 102, 173, 0.4);
+}
+.Notice li span {
+    float:right;
+} /* 날짜 오른쪽 정렬 */
+
+/*시설영상 홍보영상 공통 */
+.cdiv1, .cdiv2{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 
 .cdiv1{
     width: 400px;
-    height: 220px;
+    height: 200px;
     display: flex;
-    background-color: aquamarine;
-    border-right: #000000 3px solid;
-    border-left: #000000 2px solid;
+    background: aqua center center;
 }
 
 .cdiv2{
     width: 400px;
-    height: 220px;
+    height: 200px;
     display: flex;
-    background-color: aquamarine;
+    background: aquamarine center center;
+
 }
+
+
 
 footer{
     width: 100%;
@@ -189,11 +228,27 @@ footer{
     background-color: gray;
     display: flex;
     font-size: larger;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
 }
 
-.fli1{
+.fli2{
     width: 500px;
     height: 100%;
-    background-color: gray;
+    background-color: aliceblue;
     display: flex;
+    border-left: #000000 2px solid;
+    font-size: 27px;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+
+.fli2 > a > img{
+    width: 90px;
+    height: 90px;
+    margin-left: 25px;
+    padding-top: 5px;
 }
