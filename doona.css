@@ -147,6 +147,91 @@ header{
 }
 
 
+.custom-btn2 {
+    width: 130px;
+    height: 40px;
+    padding: 0 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-9{ 
+    width:600px; /*버튼 가로 크기*/ 
+    height:100%; /*버튼 세로 크기*/
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* 9 */
+.btn-9 {
+    line-height: 40px;
+   padding: 0;
+   background: transparent;
+   position: relative;
+   z-index: 2;
+   color: #fff;
+   -webkit-perspective: 300px;
+   perspective: 300px;
+   -webkit-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+ }
+ .btn-9:hover{
+   color: #000;
+ }
+ .btn-9:after {
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #000;
+   z-index: -1;
+   -webkit-transform-origin: center bottom;
+   transform-origin: center bottom;
+   -webkit-transform: rotateX(0);
+   transform: rotateX(0);
+   transition: all 0.3s ease;
+ }
+ .btn-9:hover:after {
+   -webkit-transform: rotateX(-180deg);
+   transform: rotateX(-180deg);
+ }
+
+.modal2{ 
+    position:absolute; 
+    width:100%; 
+    height:100%; 
+    background: rgba(0,0,0,0.2); /*모달창이 실행됐을 때 배경이 어두워지는 코드*/ 
+    top:0; /*값을 0으로 설정해서 위치 고정하는 느낌 한번 코드 지워보면 느낌이 확 옴*/
+    left:0; 
+    display:none;
+}
+  
+.modal_content2{
+    width:400px; /*모달창 가로 폭*/
+    height:200px; /*모달창 세로 폭*/
+    background:#fff; /*모달창 배경 색상*/
+    border-radius:10px; /*테두리 둥글둥글 */
+    position:relative; /*요소 자기 자신을 기준으로 배치함*/
+    top:50%; /*위에서 간격*/
+    left:50%; /*왼쪽에서 간격*/
+    margin-top:-100px; /*부족한 위치설정 잡아주기*/ 
+    margin-left:-200px; /*위치잡기*/
+    text-align:center; /*텍스트 좌우정렬*/
+    box-sizing:border-box; /*모달창 사이즈 조절*/
+    padding:74px 0; /*텍스트 상하정렬*/
+    cursor:pointer;
+}
+
+
+
 .doonaImg{
     width: 100%;
     height: 600px;
