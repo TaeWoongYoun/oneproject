@@ -152,88 +152,116 @@ input {
     font-weight: bold;
 }
 
+
+
 /* 컨텐츠 영역 */
-.contents{
-    width: 390px;
-    height: 200px;
-    padding:0;
-    margin:10px 0;
-    display:flex;
-      justify-content: space-between;
-    overflow: hidden;
-    position: relative; /* 탭메뉴의 콘텐츠 영역 absolute 때문에 넣어줌 */
-}
-  /* 각각 컨텐츠 박스의 영역 */
-.contents div{ 
-    width: 390px;
-    height: 100%;
-    border-right: #000000 solid 3px;
-}
 
-  
-  /*탭메뉴 : 공지사항 갤러리 */
-.TabMenu{
-    display:flex;
-    background-color: #ececff;
-}
-  
-  /*공지사항 갤러리 제목*/
-.TabMenu > li > a{
-    padding:0 10px;
-    min-width: 85px;
-    line-height:30px;
-    font-size:14px;
-    text-align:center;
+
+.frame {
+    width: 1040px;
+    height: 500px;
+    text-align: center;
+    border-right: #000 3px solid;
     border-top: #000000 3px solid;
-    border-bottom: #000000 3px solid;
+    background-color: aliceblue;
+    float: right;
+    padding-top: 40px;
+}
+
+
+
+
+button {
+    margin: 10px;
+    outline: none;
+}
+.btn {
+    width: 280px;
+    height: 120px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.btn > li{
+    padding-top: 19px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn > img{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+.btn-1 > li{
+    font-size: 20px;
+}
+
+.btn-2 > li{
+
+    font-size: 20px;
+}
+
+.btn-3 > li{
+
+    font-size: 20px;
+}
+
+.btn-4 > li{
+    
+    font-size: 20px;
+}
+
+.btn-5 > li{
+    
+    font-size: 20px;
+}
+
+.btn-6 > li{
+    font-size: 20px;
+}
+
+.btn-7 > li{
+    font-size: 18px;
+}
+.empty{
+    width: 400px;
+    height: 500px;
+    background-color: aliceblue;
+    float: left;
     border-left: #000000 3px solid;
-}
-  
-.TabMenu > li > a:hover{
-    background-color:#eeeeee;
-}
-  
-
-  /* 활성화된 탭의 스타일 */
-.TabMenu > li.active > a{
-    font-weight: bold; 
-    background-color:#ffffff;}
-
-   /*active 클래스가 추가된 탭 콘텐츠 영역 스타일*/
-.TabMenu > li.active div{
-    z-index:1;
-}
-  
-   /* 공지사항 */
-
-.Notice{
-    border-left: #000000 3px solid;
+    border-top: #000000 3px solid;
 }
 
-.Notice ul{
-    padding:12px 0;
-}
-.Notice > ul > li > a{
-    padding:8px 20px;
-    margin:0 10px;
-    font-size:14px;
-}
-.Notice li:nth-child(even){ 
-    background:rgba(0, 102, 173, 0.1); 
+.empty > h1{
+    text-align: center;
+    color: #222222;
+    padding-top: 120px;
+    padding-left: 30px;
 }
 
-.Notice li:hover{
-    color:#222328;
-    background:rgba(0, 102, 173, 0.4);
+.empty > h4{
+    text-align: center;
+    color: #222222;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: large;
 }
 
-.Notice li span {
-    float:right;
-} /* 날짜 오른쪽 정렬 */
 
 
 
-.cdiv1{
+
+/* .cdiv1{
     width: 350px;
     height: 200px;
     
@@ -274,51 +302,12 @@ input {
     border-right: #000000 3px solid;
 }
 
+*/
 
 footer{
-    width: 100%;
+    width: 1440px;
     height: 100px;
     display: flex;
-    border-top: #000000 3px solid;
-    border-bottom: #000000 3px solid;
-}
-
-.fli1{
-    width: 300px;
-    height: 100%;
-    background-color: gray;
-    display: flex;
-    font-size: larger;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    font-weight: 900;
-    border-left: #000000 3px solid;
-    border-right: #000000 3px solid;
-}
-
-
-
-
-
-.fli3{
-    width: 300px;
-    height: 100%;
+    border: #000000 3px solid;
     background-color: aliceblue;
-    display: flex;
-    border-right: #000000 3px solid;
-    border-left: #000000 3px solid;
-    font-size: 18px;
-    font-weight: 900;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-}
-
-.fli3 > a > img{
-    width: 90px;
-    height: 90px;
-    margin-left: 25px;
-    padding-top: 5px;
 }
