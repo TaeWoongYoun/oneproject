@@ -257,7 +257,23 @@ button {
     font-size: large;
 }
 
+.snsframe{
+    width: 740px;
+    height: 200px;
+    background-color: aliceblue;
+}
 
+.sns{
+    width: 700px;
+    height: 200px;
+    float: right;
+}
+
+.Bsns > img{
+    width: 90px;
+    height: 90px;
+    
+}
 
 
 
