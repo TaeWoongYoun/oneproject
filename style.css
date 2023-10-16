@@ -261,7 +261,7 @@ button {
 
 .snsframe{
     width: 740px;
-    height: 200px;
+    height: 100px;
     background-color: aliceblue;
     float: left;
     border-left: #000000 3px solid;
@@ -270,26 +270,28 @@ button {
 
 .snsframe > h1{
     color: #222222;
-    padding-top: 70px;
-    padding-left: 45px;
+    padding-top: 20px;
+    padding-left: 35px;
+    font-size: 40PX;
+    font-weight: 800;
 }
 
 .sns{
     width: 700px;
-    height: 200px;
+    height: 100px;
     float: right;
     background-color: aliceblue;
     text-align: center;
     display: flex;
-    padding-top: 40px;
-    padding-left: 150px;
+    padding-top: 5px;
+    padding-left: 250px;
     border-top: #000000 3px solid;
     border-right: #000000 3px solid;
 }
 
 .Bsns{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border: 3px solid #7BA4FF; 
     background: transparent;
     cursor: pointer;
@@ -300,8 +302,8 @@ button {
 }
 
 .Bsns > img{
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     
 }
 
