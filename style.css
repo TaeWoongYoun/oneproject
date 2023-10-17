@@ -16,6 +16,8 @@ main{
     
 }
 
+
+
 a{
     text-decoration-line: none;
     display: block;
@@ -91,6 +93,7 @@ header{
     padding-top: 14px;/*여백줌*/
     text-align: center; 
     color: #ffffff;
+    border: #7BA4FF 1px solid;
 }
 
 .SubMenu > li:hover{
@@ -257,7 +260,35 @@ button {
     font-size: large;
 }
 
+.con{
+    border-left: #000000 3px solid;
+    border-right: #000000 3px solid;
+    border-top: #000000 3px solid;
+}
 
+.con1{
+    width: 1440px;
+    height: 150px;
+    background-color: #7BA4FF;
+    display: flex;
+    align-items: center;
+}
+
+.con2{
+    width: 1440px;
+    height: 150px;
+    background-color: #7BA4FF;
+    display: flex;
+    align-items: center;
+}
+
+.con3{
+    width: 1440px;
+    height: 150px;
+    background-color: #7BA4FF;
+    display: flex;
+    align-items: center;
+}
 
 .snsframe{
     width: 740px;
@@ -295,7 +326,6 @@ button {
     border: 3px solid #7BA4FF; 
     background: transparent;
     cursor: pointer;
-    display: inline-block;
     background-color: rgb(126, 255, 212);
     border-radius: 15px;
     display: inline-block;
