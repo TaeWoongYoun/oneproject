@@ -13,7 +13,6 @@ main{
     width: 1440px;
     margin: 0 auto;
     position: relative;
-    
 }
 
 
@@ -28,9 +27,9 @@ header{
     height: 100px;
     background-color: aliceblue;
     display: flex;
-    border-top: #000000 3px solid;
-    border-right: #000000 3px solid;
-    border-left: #000000 3px solid;
+    border-top: #0A1218 3px solid;
+    border-right: #0A1218 3px solid;
+    border-left: #0A1218 3px solid;
 }
 
 .HeaderLi{
@@ -41,8 +40,17 @@ header{
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    color: red;
+    text-decoration: none;
     line-height: 90px;
+    /* text-shadow: -1px 0 #00C896, 0 1px #00C896, 1px 0 #00C896, 0 -1px #00C896; */
+}
+
+.HeaderLi > a{
+    color: #0A1218;
+    /* display: inline;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900; */
+
 }
 
 
@@ -61,9 +69,12 @@ header{
     padding-top: 10px; /*패딩으로 위에 여백줌*/
     position: relative; /*(상대 위치)	요소 자기 자신을 기준으로 배치하고 top bottom left right로 요소의 위치를 옮김*/
     cursor: pointer; /*커서 올리면 손모양으로 커서가 바뀜 (Wait을 사용하면 상대방 스트레스 받게 가능)*/
-    
+    border-right: #0A1218 3px solid;
 }
 
+.hea1 {
+    border-left: #0A1218 3px solid;
+}
 
 .HeaderNavi >li:hover{ /*마우스를 올리면 실행되는 hover 이벤트*/
     background: rgba(255, 255, 255, 0.5);
@@ -71,7 +82,7 @@ header{
 
 .HeaderNavi > li > a{
     text-align: center;/*글자 가운데 정렬*/
-    color: #000000;/*글자 색*/
+    color: #0A1218;/*글자 색*/
     font-size: 18px;
     font-weight: 700;
 }
@@ -82,7 +93,7 @@ header{
     position: absolute; /*메인메뉴의 기준으로 서브메뉴를 배치*/
     top: 75px; /*메인메뉴랑 서브메뉴 사이의 여백*/
     z-index: 1; /*요소의 쌓이는 순서를 결정 */
-    background: #222222;
+    background: #0A1218;
 }
 
 .SubMenu > li{
@@ -93,7 +104,9 @@ header{
     padding-top: 14px;/*여백줌*/
     text-align: center; 
     color: #ffffff;
-    border: #7BA4FF 1px solid;
+    border-bottom: #00C896 2px solid;
+    border-left: #00C896 2px solid;
+    border-right: #00C896 2px solid;
 }
 
 .SubMenu > li:hover{
@@ -112,13 +125,15 @@ header{
 
 input {
     width: 70%;
-    border: 1px solid #bbb;
+    border: 3px solid #0A1218;
     border-radius: 8px;
     padding: 10px 12px;
     font-size: 14px;
     margin-left: 15%;
     margin-top: 7%;
 }
+
+
 
 /* 이미지슬라이드 */
 
@@ -128,9 +143,9 @@ input {
     height:480px;
     overflow: hidden;
     background: #eeeeee;
-    border-top: #000000 3px solid;
-    border-right: #000000 3px solid;
-    border-left: #000000 3px solid;
+    border-top: #0A1218 3px solid;
+    border-right: #0A1218 3px solid;
+    border-left: #0A1218 3px solid;
 }
 .imgSlide > a{
     position:absolute;
@@ -164,8 +179,8 @@ input {
     width: 1040px;
     height: 500px;
     text-align: center;
-    border-right: #000 3px solid;
-    border-top: #000000 3px solid;
+    border-right: #0A1218 3px solid;
+    border-top: #0A1218 3px solid;
     background-color: aliceblue;
     float: right;
     padding-top: 40px;
@@ -182,7 +197,7 @@ button {
     width: 280px;
     height: 120px;
     padding: 10px 25px;
-    border: 2px solid #000;
+    border: 2px solid #0A1218;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -191,6 +206,8 @@ button {
     position: relative;
     display: inline-block;
     border-radius: 15px;
+    /* display: inline;
+    font-family: 'Dancing Script', cursive; */
 }
 
 .btn > li{
@@ -241,66 +258,162 @@ button {
     height: 500px;
     background-color: aliceblue;
     float: left;
-    border-left: #000000 3px solid;
-    border-top: #000000 3px solid;
+    border-left: #0A1218 3px solid;
+    border-top: #0A1218 3px solid;
 }
 
 .empty > h1{
     text-align: center;
-    color: #222222;
+    color: #0A1218;
     padding-top: 120px;
     padding-left: 30px;
 }
 
 .empty > h4{
     text-align: center;
-    color: #222222;
+    color: #0A1218;
     padding-top: 20px;
     padding-left: 30px;
     font-size: large;
 }
 
 .con{
-    border-left: #000000 3px solid;
-    border-right: #000000 3px solid;
-    border-top: #000000 3px solid;
+    border-left: #0A1218 3px solid;
+    float: left;
+    border-top: #0A1218 3px solid;
+    text-align: center;
+}
+
+.con > button{
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    margin-top: 25px;
+    margin-left: 38px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: #0A1218 3px solid;
 }
 
 .con1{
-    width: 1440px;
-    height: 150px;
-    background-color: #7BA4FF;
+    width: 480px;
+    height: 450px;
+    background-color: aquamarine;
     display: flex;
-    align-items: center;
+}
+
+.con1 > button > h1{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: orange;
+    border-radius: 10px;
+    border: #0A1218 2PX solid;
+} 
+
+.con1 > button > li{
+    float: right;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(86, 161, 214);
+    font-weight: 600;
+    border: #0A1218 2px solid;
+}
+
+.con1 > button > img{
+    width: 100%;
+    height: 70%;
+    padding-top: 40px;
+    
 }
 
 .con2{
-    width: 1440px;
-    height: 150px;
+    width: 480px;
+    height: 450px;
     background-color: #7BA4FF;
     display: flex;
-    align-items: center;
+
+}
+
+.con2 > button > h1{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #00DDF9;
+    border-radius: 10px;
+    border: #0A1218 2PX solid;
+} 
+
+.con2 > button > li{
+    float: right;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #F9F871;
+    font-weight: 600;
+    border: #0A1218 2px solid;
+}
+
+.con2 > button > img{
+    width: 100%;
+    height: 80%;
+    padding-top: 20px;
+    
 }
 
 .con3{
-    width: 1440px;
-    height: 150px;
-    background-color: #7BA4FF;
+    width: 480px;
+    height: 450px;
+    background-color: #FF9A6B;
     display: flex;
-    align-items: center;
+    border-right: #0A1218 3px solid;
 }
+
+.con3 > button > h1{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #00755D;
+    border-radius: 10px;
+    border: #0A1218 2PX solid;
+} 
+
+.con3 > button > li{
+    float: right;
+    text-align: center;
+    margin-right: 70px;
+    margin-top: 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #DFE0DF;
+    font-weight: 600;
+    border: #0A1218 2px solid;
+}
+
+.con3 > button > img{
+    width: 100%;
+    height: 70%;
+    padding-top: 40px;
+}
+
+
 
 .snsframe{
     width: 740px;
     height: 100px;
     background-color: aliceblue;
     float: left;
-    border-left: #000000 3px solid;
-    border-top: #000000 3px solid;
+    border-left: #0A1218 3px solid;
+    border-top: #0A1218 3px solid;
 }
 
 .snsframe > h1{
-    color: #222222;
+    color: #0A1218;
     padding-top: 20px;
     padding-left: 35px;
     font-size: 40PX;
@@ -316,8 +429,8 @@ button {
     display: flex;
     padding-top: 5px;
     padding-left: 250px;
-    border-top: #000000 3px solid;
-    border-right: #000000 3px solid;
+    border-top: #0A1218 3px solid;
+    border-right: #0A1218 3px solid;
 }
 
 .Bsns{
@@ -382,10 +495,10 @@ button {
 
 */
 
-footer{
+/* footer{
     width: 1440px;
     height: 100px;
     display: flex;
-    border: #000000 3px solid;
-    background-color: aliceblue;
-}
+    border: #0A1218 3px solid;
+    background-color: #565D63;
+} */
