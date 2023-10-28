@@ -137,7 +137,7 @@ input {
 
 /* 이미지슬라이드 */
 
-.imgSlide{
+/* .imgSlide{
     position:relative;
     width:1440px;
     height:480px;
@@ -168,7 +168,7 @@ input {
     color:#ffffff;
     padding: 20px 100px;
     font-weight: bold;
-}
+} */
 
 
 
@@ -216,7 +216,7 @@ button {
     font-weight: 700;
 }
 
-.btn > img{
+.btn > a > img{
     width: 70px;
     height: 70px;
     float: left;
