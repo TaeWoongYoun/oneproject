@@ -99,7 +99,7 @@ header{
 .SubMenu > li{
     width: 100%;
     height: 45px; 
-    font-size: 14px; /*글씨 크기*/
+    font-size: 13px; /*글씨 크기*/
     font-weight: 500; /*글씨 굵기*/
     padding-top: 14px;/*여백줌*/
     text-align: center; 
